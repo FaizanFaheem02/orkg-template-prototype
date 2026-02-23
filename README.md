@@ -1,19 +1,15 @@
 # ORKG Template Python Prototype
 
-This repository contains a minimal Python script, based on the ORKG Python package documentation in order to load an ORKG template, populate it with dummy values, and attempt to store it in the ORKG Sandbox. 
+This repository contains a minimal Python script, based on the ORKG Python package documentation in order to load an ORKG template, populate it with dummy values, and store it in the ORKG Sandbox. 
 
-## What Works till now and In Progress
+## Current Progress
 
 - Successful authentication against the ORKG Sandbox
 - Connectivity verified via `orkg.ping()`
 - Template inspection via `get_template_specifications(template_id)`
 - Template materialization via `materialize_template(template_id)`
 - Auto-generated Python functions created for templates (e.g. NLP4RE ID Card, Empirical Research Practice)
-- Attempting to create template instances and saving template instances in the ORKG Sandbox (currently in progress)
-
-## Encountered Issue
-
-Please note that creating template instances via the ORKG Python client consistently encountered issues for both the NLP4RE ID Card and Empirical Research Practice templates. All instantiation attempts resulted in the same runtime error (UnboundLocalError: cannot access local variable 'object_description_at_i), even when all required arguments were supplied with minimal/placeholder values.
+- Create template instances and saving template instances in the ORKG Sandbox successfully 
 
 ## Environment Setup
 
