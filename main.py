@@ -34,4 +34,6 @@ instance = orkg.templates.nlp4re_id_card(
 )
 
 result = instance.save()
-print("Saved instance successfully:", result.content["id"])
+instance_id = result.content["id"]
+print("Saved instance successfully:", instance_id)
+print(f"Please open the link to view ORKG sandbox: https://sandbox.orkg.org/resource/{result.content['id']}")
