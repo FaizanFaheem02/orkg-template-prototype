@@ -21,9 +21,7 @@ print("Connected to ORKG SandBox")
 orkg.templates.materialize_template("R2127025")
 print("Template materialized")
 
-tp = orkg.templates
-
-instance = tp.nlp4re_id_card(
+instance = orkg.templates.nlp4re_id_card(
     label="Dummy NLP4RE instance",
     _problem_tackled="Dummy problem",
     solution_proposed="Dummy solution",
