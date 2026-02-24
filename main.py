@@ -13,7 +13,8 @@ if not (email and password):
 
 orkg = ORKG(host=Hosts.SANDBOX, creds=(email, password))
 
-assert orkg.ping()
+if not orkg.ping():
+    exit("Failed to connect to ORKG Sandbox")
 
 print("Connected to ORKG SandBox")
 
