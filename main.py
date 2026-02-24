@@ -2,11 +2,14 @@ from orkg import ORKG, Hosts
 from dotenv import load_dotenv
 import os
 
-load_dotenv()
+# Load the .env file so that we can access the environment variables with getenv()
+load_dotenv() 
 
-email = os.getenv("ORKG_EMAIL")
-password = os.getenv("ORKG_PASSWORD")
+email = os.getenv("ORKG_EMAIL") 
+password = os.getenv("ORKG_PASSWORD") 
 
+if not (email and password):
+    exit("Please set ORKG_EMAIL and ORKG_PASSWORD")
 
 orkg = ORKG(host=Hosts.SANDBOX, creds=(email, password))
 
