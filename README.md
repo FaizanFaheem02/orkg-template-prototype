@@ -9,7 +9,7 @@ This repository contains a minimal Python script, based on the ORKG Python packa
 - Template inspection via `get_template_specifications(template_id)`
 - Template materialization via `materialize_template(template_id)`
 - Auto-generated Python functions created for templates (e.g. NLP4RE ID Card, Empirical Research Practice)
-- Create template instances and saving template instances in the ORKG Sandbox successfully 
+- Create and save template instances in ORKG Sandbox 
 
 ## Environment Setup
 
